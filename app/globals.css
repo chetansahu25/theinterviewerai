@@ -299,7 +299,7 @@
 }
 
 @utility border-gradient {
-  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
+  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4D4F33];
 }
 
 @utility pattern {
