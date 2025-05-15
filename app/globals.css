@@ -10,12 +10,12 @@
   --color-destructive-100: #f75353;
   --color-destructive-200: #c44141;
 
-  --color-primary-100: #6E44FF;
-  --color-primary-200: #d8cfaf;
+  --color-primary-100: #dddfff;
+  --color-primary-200: #cac5fe;
 
-  --color-light-100: #171219;
-  --color-light-400: #6E44FF;
-  --color-light-600: #d8cfaf;
+  --color-light-100: #d6e0ff;
+  --color-light-400: #6870a6;
+  --color-light-600: #4f557d;
   --color-light-800: #24273a;
 
   --color-dark-100: #020408;
@@ -29,56 +29,39 @@
 
 :root {
   --radius: 0.625rem;
-
-  /* Light background and dark text */
-  --background: #CEFF1A;
-  --foreground: #1f2937;
-
-  /* Cards and UI surfaces */
-  --card: #CEFF1A;
-  --card-foreground: #1f2937;
-  --popover: #CEFF1A;
-  --popover-foreground: #1f2937;
-
-  /* Orange primary theme */
-  --primary: #f97316;
-  --primary-foreground: #ffffff;
-
-  /* Secondary background */
-  --secondary: #f97316;
-  --secondary-foreground: #ffffff;
-
-  /* Muted / subdued UI */
-  --muted: #f3f4f6;
-  --muted-foreground: #ffffff;
-
-  /* Accent elements */
-  --accent: #fed7aa;
-  --accent-foreground: #78350f;
-
-  /* Errors / destructive */
-  --destructive: #ef4444;
-  --border: #e5e7eb;
-  --input: #f3f4f6;
-  --ring: #fb923c;
-
-  /* Charts (optional) */
-  --chart-1: #fb923c;
-  --chart-2: #f97316;
-  --chart-3: #fdba74;
-  --chart-4: #fcd34d;
-  --chart-5: #fde68a;
-
-  /* Sidebar (white with orange accents) */
-  --sidebar: #ffffff;
-  --sidebar-foreground: #1f2937;
-  --sidebar-primary: #f97316;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #fde68a;
-  --sidebar-accent-foreground: #78350f;
-  --sidebar-border: #e5e7eb;
-  --sidebar-ring: #fb923c;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -156,19 +139,22 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-black;
+    @apply bg-background text-foreground;
   }
-  p, li {
-    @apply text-black;
+  p {
+    @apply text-light-100;
   }
   h2 {
-    @apply text-3xl font-semibold text-white;
+    @apply text-3xl font-semibold;
   }
   h3 {
-    @apply text-2xl font-semibold text-white;
+    @apply text-2xl font-semibold;
   }
   ul {
     @apply list-disc list-inside;
+  }
+  li {
+    @apply text-light-100;
   }
 }
 
@@ -309,11 +295,11 @@
 }
 
 @utility dark-gradient {
-  @apply bg-gradient-to-b from-[#fff7ed] to-[#ffedd5];
+  @apply bg-gradient-to-b from-[#1A1C20] to-[#08090D];
 }
 
 @utility border-gradient {
-  @apply bg-gradient-to-b from-[#43380D] to-[#655514];
+  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
 }
 
 @utility pattern {
@@ -321,11 +307,11 @@
 }
 
 @utility blue-gradient-dark {
-  @apply bg-gradient-to-b from-[#fb923c] to-[#f97316];
+  @apply bg-gradient-to-b from-[#171532] to-[#08090D];
 }
 
 @utility blue-gradient {
-  @apply bg-gradient-to-l from-[#ffffff] to-[#ffe8d4];
+  @apply bg-gradient-to-l from-[#FFFFFF] to-[#CAC5FE];
 }
 
 @utility flex-center {
