@@ -37,7 +37,7 @@
   /* Cards and UI surfaces */
   --card: #CEFF1A;
   --card-foreground: #1f2937;
-  --popover: #ffffff;
+  --popover: #CEFF1A;
   --popover-foreground: #1f2937;
 
   /* Orange primary theme */
@@ -45,12 +45,12 @@
   --primary-foreground: #ffffff;
 
   /* Secondary background */
-  --secondary: #fef3c7;
-  --secondary-foreground: #92400e;
+  --secondary: #f97316;
+  --secondary-foreground: #ffffff;
 
   /* Muted / subdued UI */
   --muted: #f3f4f6;
-  --muted-foreground: #6b7280;
+  --muted-foreground: #ffffff;
 
   /* Accent elements */
   --accent: #fed7aa;
