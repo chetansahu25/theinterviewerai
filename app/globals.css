@@ -29,39 +29,56 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.985 0 0); /* light background */
-  --foreground: oklch(0.145 0 0); /* dark text */
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.75 0.23 60); /* orange */
-  --primary-foreground: oklch(0.15 0 0); /* dark text on orange */
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.94 0 0);
-  --muted-foreground: oklch(0.44 0 0);
-  --accent: oklch(0.96 0.08 80);
-  --accent-foreground: oklch(0.2 0 0);
-  --destructive: oklch(0.65 0.25 27.325);
-  --border: oklch(0.88 0 0);
-  --input: oklch(0.92 0 0);
-  --ring: oklch(0.75 0.15 60);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.75 0.23 60);
-  --sidebar-primary-foreground: oklch(0.145 0 0);
-  --sidebar-accent: oklch(0.96 0.08 80);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.88 0 0);
-  --sidebar-ring: oklch(0.75 0.15 60);
-}
 
+  /* Light background and dark text */
+  --background: #ffffff;
+  --foreground: #1f2937;
+
+  /* Cards and UI surfaces */
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
+
+  /* Orange primary theme */
+  --primary: #f97316;
+  --primary-foreground: #ffffff;
+
+  /* Secondary background */
+  --secondary: #fef3c7;
+  --secondary-foreground: #92400e;
+
+  /* Muted / subdued UI */
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+
+  /* Accent elements */
+  --accent: #fed7aa;
+  --accent-foreground: #78350f;
+
+  /* Errors / destructive */
+  --destructive: #ef4444;
+  --border: #e5e7eb;
+  --input: #f3f4f6;
+  --ring: #fb923c;
+
+  /* Charts (optional) */
+  --chart-1: #fb923c;
+  --chart-2: #f97316;
+  --chart-3: #fdba74;
+  --chart-4: #fcd34d;
+  --chart-5: #fde68a;
+
+  /* Sidebar (white with orange accents) */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1f2937;
+  --sidebar-primary: #f97316;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fde68a;
+  --sidebar-accent-foreground: #78350f;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #fb923c;
+}
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
