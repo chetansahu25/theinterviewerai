@@ -295,7 +295,7 @@
 }
 
 @utility dark-gradient {
-  @apply bg-gradient-to-b from-[#CD500C] to-[#F05D0E];
+  @apply bg-gradient-to-b from-[#fff7ed] to-[#ffedd5];
 }
 
 @utility border-gradient {
@@ -307,11 +307,11 @@
 }
 
 @utility blue-gradient-dark {
-  @apply bg-gradient-to-b from-[#893508] to-[#672806];
+  @apply bg-gradient-to-b from-[#fb923c] to-[#f97316];
 }
 
 @utility blue-gradient {
-  @apply bg-gradient-to-l from-[#FFFFFF] to-[#F8AB81];
+  @apply bg-gradient-to-l from-[#ffffff] to-[#ffe8d4];
 }
 
 @utility flex-center {
