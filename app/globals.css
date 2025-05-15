@@ -156,22 +156,19 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-black;
   }
-  p {
-    @apply text-light-100;
+  p, li {
+    @apply text-black;
   }
   h2 {
-    @apply text-3xl font-semibold;
+    @apply text-3xl font-semibold text-white;
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl font-semibold text-white;
   }
   ul {
     @apply list-disc list-inside;
-  }
-  li {
-    @apply text-light-100;
   }
 }
 
